@@ -1,0 +1,19 @@
+.bg-hero-image {
+    background-image: url(imgs/placeholder.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: #d1d1d1;
+    background-size: cover;
+    height: 43.75rem;
+}
+
+footer {
+    background-color: rgb(133, 133, 133);
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center !important;
+    padding-bottom: .5rem !important;
+    padding-top: 1rem !important;
+    justify-content: center;
+}
