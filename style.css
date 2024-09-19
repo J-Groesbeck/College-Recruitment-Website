@@ -17,3 +17,19 @@ footer {
     padding-top: 1rem !important;
     justify-content: center;
 }
+
+.fade-anim {
+    animation: fadeAnimation 1s ease;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

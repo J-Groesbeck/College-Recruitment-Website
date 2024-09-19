@@ -28,16 +28,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item m-1">
-                            <button class="btn btn-sm btn-outline-secondary" type="button">Academics</button>
+                            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="editText('academics'); document.getElementById('section-image').scrollIntoView();">Academics</button>
                         </li>
                         <li class="nav-item m-1">
-                            <button class="btn btn-sm btn-outline-secondary" type="button">Student Life</button>
+                            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="editText('life'); document.getElementById('section-image').scrollIntoView();">Student Life</button>
                         </li>
                         <li class="nav-item m-1">
-                            <button class="btn btn-sm btn-outline-secondary" type="button">Financial Aid</button>
+                            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="editText('aid'); document.getElementById('section-image').scrollIntoView();">Financial Aid</button>
                         </li>
                         <li class="nav-item m-1">
-                            <button class="btn btn-sm btn-outline-secondary" type="button">Alumni</button>
+                            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="document.getElementById('alumni').scrollIntoView();">Alumni</button>
                         </li>
                     </ul>
                 </div>
@@ -64,13 +64,13 @@
             </div>
             <div class="row mt-3">
                 <div class="col-1"></div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <h1>BIG TITLE GOES HERE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos unde
                         eaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minima
                         magni debitis aperiam iure odit.</p>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <img src="imgs/placeholder.png" class="w-100">
                 </div>
                 <div class="col-1"></div>
@@ -80,15 +80,15 @@
             <div class="row mt-3">
                 <div class="col-2 d-none d-lg-block"></div>
                 <div class="col-4 col-lg-2">
-                    <a href="#" class="btn btn-primary w-100">Academics</a>
+                    <a onclick="editText('academics')" class="btn btn-primary w-100">Academics</a>
                 </div>
                 <div class="col-1 d-none d-lg-block"></div>
                 <div class="col-4 col-lg-2">
-                    <a href="#" class="btn btn-primary w-100">Student Life</a>
+                    <a onclick="editText('life')" class="btn btn-primary w-100">Student Life</a>
                 </div>
                 <div class="col-1 d-none d-lg-block"></div>
                 <div class="col-4 col-lg-2">
-                    <a href="#" class="btn btn-primary w-100">Financial Aid</a>
+                    <a onclick="editText('aid')" class="btn btn-primary w-100">Financial Aid</a>
                 </div>
                 <div class="col-2 d-none d-lg-block"></div>
             </div>
@@ -96,12 +96,12 @@
         <div class="container-fluid">
             <div class="row mt-3">
                 <div class="col-1"></div>
-                <div class="col-6">
-                    <img src="imgs/placeholder.png" class="w-100">
+                <div class="col-12 col-md-6">
+                    <img id="section-image" src="imgs/placeholder.png" class="w-100">
                 </div>
-                <div class="col-4">
-                    <h1>BIG TITLE GOES HERE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos unde
+                <div class="col-12 col-md-4 mt-2 mt-md-0">
+                    <h1 id="section-title">BIG TITLE GOES HERE (academics)</h1>
+                    <p id="section-paragraph">academic Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos unde
                         eaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minima
                         magni debitis aperiam iure odit.</p>
                 </div>
@@ -204,6 +204,7 @@
                 class="fa-brands fa-github fa-2xl"></i></a><br>
         <img src="imgs/placeholder.png" class="footer-logo-sizing mt-2" style="height: 69px;">
     </footer>
+    <script src="script.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
