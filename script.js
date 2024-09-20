@@ -14,17 +14,17 @@ function editText(info) {
                 currentSection = 'academics'
                 sectionTitle.innerText = 'BIG TITLE GOES HERE (academics)'
                 sectionPara.innerText = 'academic Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos undeeaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minimamagni debitis aperiam iure odit.'
-                sectionImg.src = 'imgs/placeholder.png'
+                sectionImg.src = 'imgs/academics.jpg'
             } else if (info === 'life') {
                 currentSection = 'life'
                 sectionTitle.innerText = 'BIG TITLE GOES HERE (life)'
                 sectionPara.innerText = 'student life Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos undeeaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minimamagni debitis aperiam iure odit.'
-                sectionImg.src = 'imgs/placeholder.png'
+                sectionImg.src = 'imgs/life.jpg'
             } else if (info === 'aid') {
                 currentSection = 'aid'
                 sectionTitle.innerText = 'BIG TITLE GOES HERE (aid)'
                 sectionPara.innerText = 'financial aid Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos undeeaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minimamagni debitis aperiam iure odit.'
-                sectionImg.src = 'imgs/placeholder.png'
+                sectionImg.src = 'imgs/aid.png'
             }
         }, 500);
 
@@ -33,5 +33,12 @@ function editText(info) {
             sectionPara.classList.remove('fade-anim')
             sectionImg.classList.remove('fade-anim')
         }, 1000);
+
+        document.querySelectorAll('.btn-primary').forEach(element => element.classList.remove('enabled'))
+        document.querySelectorAll('.btn-primary').forEach(element => element.classList.add('disabled'))
+        setTimeout(() => {
+            document.querySelectorAll('.btn-primary').forEach(element => element.classList.remove('disabled'))
+            document.querySelectorAll('.btn-primary').forEach(element => element.classList.add('enabled'))
+        }, 800);
     }
 } 

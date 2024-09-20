@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="imgs/logo1.png" width="50" height="48" class="d-inline-block align-text-top ms-2">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -28,16 +28,22 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item m-1">
-                            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="editText('academics'); document.getElementById('section-image').scrollIntoView();">Academics</button>
+                            <button class="btn btn-sm btn-outline-secondary" type="button"
+                                onclick="editText('academics'); document.getElementById('info-section').scrollIntoView();">Academics</button>
                         </li>
                         <li class="nav-item m-1">
-                            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="editText('life'); document.getElementById('section-image').scrollIntoView();">Student Life</button>
+                            <button class="btn btn-sm btn-outline-secondary" type="button"
+                                onclick="editText('life'); document.getElementById('info-section').scrollIntoView();">Student
+                                Life</button>
                         </li>
                         <li class="nav-item m-1">
-                            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="editText('aid'); document.getElementById('section-image').scrollIntoView();">Financial Aid</button>
+                            <button class="btn btn-sm btn-outline-secondary" type="button"
+                                onclick="editText('aid'); document.getElementById('info-section').scrollIntoView();">Financial
+                                Aid</button>
                         </li>
                         <li class="nav-item m-1">
-                            <button class="btn btn-sm btn-outline-secondary" type="button" onclick="document.getElementById('alumni').scrollIntoView();">Alumni</button>
+                            <button class="btn btn-sm btn-outline-secondary" type="button"
+                                onclick="document.getElementById('alumni').scrollIntoView();">Alumni</button>
                         </li>
                     </ul>
                 </div>
@@ -51,8 +57,8 @@
                     <div class="row h-100">
                         <div class="col-6"></div>
                         <div class="col-5 mt-5 pt-5">
-                            <h1 class="text-right">BIG TITLE GOES HERE</h1>
-                            <p class="text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                            <h1 class="text-end">BIG TITLE GOES HERE</h1>
+                            <p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
                                 repellendus nulla nisi quos unde
                                 eaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique
                                 minima
@@ -62,21 +68,21 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row background-color">
                 <div class="col-1"></div>
-                <div class="col-12 col-md-4">
-                    <h1>BIG TITLE GOES HERE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos unde
+                <div class="col-12 col-md-4 my-3">
+                    <h1 class="text-light">BIG TITLE GOES HERE</h1>
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos unde
                         eaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minima
                         magni debitis aperiam iure odit.</p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <img src="imgs/placeholder.png" class="w-100">
+                <div class="col-12 col-md-6 my-3">
+                    <img src="imgs/CORE.png" class="w-100">
                 </div>
                 <div class="col-1"></div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="info-section">
             <div class="row mt-3">
                 <div class="col-2 d-none d-lg-block"></div>
                 <div class="col-4 col-lg-2">
@@ -97,11 +103,12 @@
             <div class="row mt-3">
                 <div class="col-1"></div>
                 <div class="col-12 col-md-6">
-                    <img id="section-image" src="imgs/placeholder.png" class="w-100">
+                    <img id="section-image" src="imgs/academics.jpg" class="w-100">
                 </div>
                 <div class="col-12 col-md-4 mt-2 mt-md-0">
-                    <h1 id="section-title">BIG TITLE GOES HERE (academics)</h1>
-                    <p id="section-paragraph">academic Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos unde
+                    <h1 id="section-title" class="text-end">BIG TITLE GOES HERE (academics)</h1>
+                    <p id="section-paragraph" class="text-end">academic Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Esse repellendus nulla nisi quos unde
                         eaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minima
                         magni debitis aperiam iure odit.</p>
                 </div>
@@ -109,8 +116,11 @@
             </div>
         </div>
         </div>
-        <div class="container mt-5">
-            <div class="row">
+        <div class="container mt-5" id="alumni">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1>Notable Alumni</h1>
+                </div>
                 <div class="col-4 d-none d-md-flex">
                     <div class="card w-100">
                         <img src="imgs/placeholder.png" class="card-img-top">
@@ -202,7 +212,8 @@
     <footer id="footer" class="mt-2">
         <a href="https://github.com/J-Groesbeck/College-Recruitment-Website" target="_blank" class="fa-links"><i
                 class="fa-brands fa-github fa-2xl"></i></a><br>
-        <img src="imgs/placeholder.png" class="footer-logo-sizing mt-2" style="height: 69px;">
+        <a href="https://www.rutgers.edu/" target="_blank">
+            <img src="imgs/logo2.png" class="footer-logo-sizing mt-2" style="height: 69px;"></a>
     </footer>
     <script src="script.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
@@ -214,5 +225,4 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -1,15 +1,19 @@
 .bg-hero-image {
-    background-image: url(imgs/placeholder.png);
+    background-image: url(imgs/hero_img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
-    background-color: #d1d1d1;
+    background-color: #bdbdbd;
     background-size: cover;
     height: 43.75rem;
 }
 
+.background-color {
+    background-color: #730001;
+}
+
 footer {
-    background-color: rgb(133, 133, 133);
+    background-color: #730001;
     padding: 2rem;
     margin-top: 3rem;
     text-align: center !important;
@@ -26,10 +30,60 @@ footer {
     0% {
         opacity: 100%;
     }
+
     50% {
         opacity: 0%;
     }
+
     100% {
         opacity: 100%;
     }
+}
+
+.btn-primary {
+    --bs-btn-bg: #d00434 !important;
+    --bs-btn-border-color: #d00434 !important;
+    --bs-btn-hover-bg: #730001 !important;
+    --bs-btn-hover-border-color: #550001 !important;
+    --bs-btn-active-bg: #550001 !important;
+    --bs-btn-active-border-color: #3f0001 !important;
+    --bs-btn-disabled-bg: #d00434 !important;
+    --bs-btn-disabled-border-color: #d00434 !important;
+}
+
+.btn.disabled {
+    animation: disableButtons 0.3s ease;
+    opacity: 100%;
+}
+
+@keyframes disableButtons {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: var(--bs-btn-disabled-opacity);
+    }
+}
+
+.btn.enabled {
+    animation: enableButtons 0.5s ease;
+}
+
+@keyframes enableButtons {
+    from {
+        opacity: var(--bs-btn-disabled-opacity);
+    }
+
+    to {
+        opacity: 100% !important;
+    }
+}
+
+#section-image {
+    height: 600px;
+}
+
+img {
+    border-radius: 5px;
 }
