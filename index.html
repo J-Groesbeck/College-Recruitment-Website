@@ -15,33 +15,27 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a class="navbar-brand" href="#">
-                    <img src="imgs/logo1.png" width="50" height="48" class="d-inline-block align-text-top ms-2">
+                    <img src="imgs/logo1.png" width="50" height="48" class="d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item m-1">
+                <div class="d-flex">
+                    <ul class="navbar-nav ms-auto d-flex flex-row">
+                        <li class="nav-item me-1 my-1">
                             <button class="btn btn-sm btn-outline-secondary" type="button"
                                 onclick="editText('academics'); document.getElementById('info-section').scrollIntoView();">Academics</button>
                         </li>
-                        <li class="nav-item m-1">
+                        <li class="nav-item me-1 my-1">
                             <button class="btn btn-sm btn-outline-secondary" type="button"
                                 onclick="editText('life'); document.getElementById('info-section').scrollIntoView();">Student
                                 Life</button>
                         </li>
-                        <li class="nav-item m-1">
+                        <li class="nav-item me-1 my-1">
                             <button class="btn btn-sm btn-outline-secondary" type="button"
-                                onclick="editText('aid'); document.getElementById('info-section').scrollIntoView();">Financial
-                                Aid</button>
+                                onclick="editText('aid'); document.getElementById('info-section').scrollIntoView();">Finances</button>
                         </li>
-                        <li class="nav-item m-1">
+                        <li class="nav-item my-1">
                             <button class="btn btn-sm btn-outline-secondary" type="button"
                                 onclick="document.getElementById('alumni').scrollIntoView();">Alumni</button>
                         </li>
@@ -70,9 +64,10 @@
             </div>
             <div class="row background-color">
                 <div class="col-1"></div>
-                <div class="col-12 col-md-4 my-3">
-                    <h1 class="text-light">BIG TITLE GOES HERE</h1>
-                    <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi quos unde
+                <div class="col-12 col-md-4 mt-3">
+                    <h1 class="text-light text-center text-md-start">BIG TITLE GOES HERE</h1>
+                    <p class="text-light text-center text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus
+                        nulla nisi quos unde
                         eaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minima
                         magni debitis aperiam iure odit.</p>
                 </div>
@@ -106,11 +101,12 @@
                     <img id="section-image" src="imgs/academics.jpg" class="w-100">
                 </div>
                 <div class="col-12 col-md-4 mt-2 mt-md-0">
-                    <h1 id="section-title" class="text-end">BIG TITLE GOES HERE (academics)</h1>
-                    <p id="section-paragraph" class="text-end">academic Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Esse repellendus nulla nisi quos unde
-                        eaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis, similique minima
-                        magni debitis aperiam iure odit.</p>
+                    <h1 id="section-title" class="text-center text-md-end">BIG TITLE GOES HERE (academics)</h1>
+                    <p id="section-paragraph" class="text-center text-md-end">
+                        academic Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus nulla nisi
+                        quos unde eaque, omnis delectus, suscipit iste voluptatibus facere maiores perspiciatis,
+                        similique minima magni debitis aperiam iure odit.
+                    </p>
                 </div>
                 <div class="col-1"></div>
             </div>
@@ -123,31 +119,43 @@
                 </div>
                 <div class="col-4 d-none d-md-flex">
                     <div class="card w-100">
-                        <img src="imgs/placeholder.png" class="card-img-top">
+                        <img src="imgs/milton-friedman.jpg" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Milton Friedman</h5>
+                            <p class="card-text">Milton Friedman was an American economist who won the 1976 Nobel Prize
+                                in Economic Sciences for his work on consumption analysis and monetary theory. A leader
+                                of the Chicago school of economics, he rejected Keynesianism in favor of monetarism and
+                                later contributed to new classical macroeconomics. His students and mentees, including
+                                Gary Becker and Robert Lucas Jr., became influential economists.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 d-none d-md-flex">
                     <div class="card w-100">
-                        <img src="imgs/placeholder.png" class="card-img-top">
+                        <img src="imgs/judea-pearl.jpg" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Judea Pearl</h5>
+                            <p class="card-text">Judea Pearl is an Israeli-American computer scientist best known for
+                                advancing probabilistic approaches to AI, particularly through Bayesian networks. He
+                                developed a theory of causal and counterfactual inference, earning the 2011 Turing Award
+                                for his work. Pearl authored several books, including Causality and The Book of Why,
+                                aimed at different audiences.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 d-none d-md-flex">
                     <div class="card w-100">
-                        <img src="imgs/placeholder.png" class="card-img-top">
+                        <img src="imgs/selman-waksman.jpg" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title">Selman Abraham Waksman</h5>
+                            <p class="card-text">Selman Waksman, a Jewish Ukrainian biochemist and microbiologist,
+                                discovered streptomycin and several other antibiotics, earning the 1952 Nobel Prize in
+                                Physiology or Medicine. He taught at Rutgers University and introduced key procedures
+                                for developing antibiotics. Waksman later faced a lawsuit from his student, Albert
+                                Schatz, over the credit for discovering streptomycin.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -157,16 +165,21 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Name
+                                    Milton Friedman
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <img src="imgs/placeholder.png" class="w-100 mb-2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nihil iste
-                                    beatae. Nihil impedit commodi, magnam eligendi nobis suscipit deleniti, laudantium
-                                    natus repudiandae maxime accusamus totam voluptatum expedita temporibus rem?
+                                    <img src="imgs/milton-friedman.jpg" class="w-100 mb-2">
+                                    Milton Friedman was an American economist who won the 1976 Nobel Prize
+                                    in Economic Sciences for his work on consumption analysis and monetary theory. A
+                                    leader
+                                    of the Chicago school of economics, he rejected Keynesianism in favor of monetarism
+                                    and
+                                    later contributed to new classical macroeconomics. His students and mentees,
+                                    including
+                                    Gary Becker and Robert Lucas Jr., became influential economists.
                                 </div>
                             </div>
                         </div>
@@ -174,16 +187,19 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Name
+                                    Judea Pearl
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <img src="imgs/placeholder.png" class="w-100 mb-2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nihil iste
-                                    beatae. Nihil impedit commodi, magnam eligendi nobis suscipit deleniti, laudantium
-                                    natus repudiandae maxime accusamus totam voluptatum expedita temporibus rem?
+                                    <img src="imgs/judea-pearl.jpg" class="w-100 mb-2">
+                                    Judea Pearl is an Israeli-American computer scientist best known for
+                                    advancing probabilistic approaches to AI, particularly through Bayesian networks. He
+                                    developed a theory of causal and counterfactual inference, earning the 2011 Turing
+                                    Award
+                                    for his work. Pearl authored several books, including Causality and The Book of Why,
+                                    aimed at different audiences.
                                 </div>
                             </div>
                         </div>
@@ -191,16 +207,19 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Name
+                                    Selman Abraham Waksman
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <img src="imgs/placeholder.png" class="w-100 mb-2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nihil iste
-                                    beatae. Nihil impedit commodi, magnam eligendi nobis suscipit deleniti, laudantium
-                                    natus repudiandae maxime accusamus totam voluptatum expedita temporibus rem?
+                                    <img src="imgs/selman-waksman.jpg" class="w-100 mb-2">
+                                    Selman Waksman, a Jewish Ukrainian biochemist and microbiologist,
+                                    discovered streptomycin and several other antibiotics, earning the 1952 Nobel Prize
+                                    in Physiology or Medicine. He taught at Rutgers University and introduced key
+                                    procedures for developing antibiotics. Waksman later faced a lawsuit from his
+                                    student, Albert
+                                    Schatz, over the credit for discovering streptomycin.
                                 </div>
                             </div>
                         </div>
@@ -225,4 +244,5 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

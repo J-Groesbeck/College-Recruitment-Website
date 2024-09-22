@@ -1,3 +1,12 @@
+.navbar {
+    --bs-navbar-padding-y: 0 !important;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+    padding: 0 !important;
+}
+
 .bg-hero-image {
     background-image: url(imgs/hero_img.jpg);
     background-position: center center;
@@ -5,11 +14,16 @@
     background-blend-mode: overlay;
     background-color: #bdbdbd;
     background-size: cover;
-    height: 43.75rem;
+    height: 35rem;
 }
 
 .background-color {
     background-color: #730001;
+}
+
+.card {
+    --bs-card-bg: #730001 !important;
+    color: white !important;
 }
 
 footer {
@@ -81,9 +95,27 @@ footer {
 }
 
 #section-image {
-    height: 600px;
+    height: 400px;
 }
 
 img {
     border-radius: 5px;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #d25959 !important;
+    --bs-accordion-border-color: black !important;
+}
+
+.accordion-item {
+    background-color: #d00434 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: #730001 !important;
+}
+
+.accordion-button {
+    background-color: #d00434 !important;
 }
