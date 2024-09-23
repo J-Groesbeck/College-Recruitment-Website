@@ -22,7 +22,7 @@ function editText(info) {
                 sectionImg.src = 'imgs/life.jpg'
             } else if (info === 'aid') {
                 currentSection = 'aid'
-                sectionTitle.innerText = 'BIG TITLE GOES HERE (aid)'
+                sectionTitle.innerText = 'Financial Aid'
                 sectionPara.innerHTML = 'For NJ residents, tuition is $17,250, and with Room & Board the total is $33,324. Out of state tuition is $36,762 and with Room & Board the total is $52,836. See <a href="https://scarlethub.rutgers.edu/financial-services/" target="_blank">this website<a> for any financial needs you may have.'
                 sectionImg.src = 'imgs/aid.png'
             }
