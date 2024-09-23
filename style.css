@@ -14,7 +14,7 @@
     background-blend-mode: overlay;
     background-color: #bdbdbd;
     background-size: cover;
-    height: 35rem;
+    height: 40rem;
 }
 
 .background-color {
@@ -95,7 +95,7 @@ footer {
 }
 
 #section-image {
-    height: 400px;
+    height: 600px;
 }
 
 img {
@@ -118,4 +118,12 @@ img {
 
 .accordion-button {
     background-color: #d00434 !important;
+}
+
+.intro-text {
+    font-size: 60px;
+}
+
+.fa-links {
+    color: #d00434 !important;
 }
